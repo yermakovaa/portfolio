@@ -7,9 +7,7 @@ import AppBar from './components/AppBar';
 import Footer from './components/Footer';
 import LoaderComponent from './components/LoaderComponent';
 
-import contacts from './data/contacts.json';
 import techSkills from './data/techSkills.json';
-import softSkills from './data/softSkills.json';
 import commandProjects from './data/commandProjects.json';
 import ownProjects from './data/ownProjects.json';
 import experience from './data/experience.json';
@@ -40,7 +38,7 @@ function App() {
       <Suspense fallback={<LoaderComponent />}>
         <Switch>
           <Route path="/" exact>
-            <HomeView techSkills={techSkills} contacts={contacts} />
+            <HomeView techSkills={techSkills} />
           </Route>
 
           <Route path="/projects" exact>

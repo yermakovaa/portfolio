@@ -1,0 +1,4 @@
+.header {
+  border-bottom: 4px solid;
+  border-image: linear-gradient(to right, #f50057, #e6e6fa, #ff6b08) 47% 0%;
+}

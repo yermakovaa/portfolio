@@ -1,24 +1,40 @@
+import { motion } from 'framer-motion';
 import TechSkills from '../../components/TechSkills';
 import Contacts from '../../components/Contacts';
 import myPhoto from '../../img/photo.jpeg';
 import PropTypes from 'prop-types';
 import s from './HomeView.module.css';
 
-function HomeView({ techSkills, contacts }) {
+function HomeView({ techSkills }) {
   return (
     <main className={s.main}>
-      <img
+      <motion.img
+        animate={{
+          boxShadow: [
+            '0px 0px 0px 0px #ff6b08',
+            '0px 0px 30px 0px #ff6b08',
+            '0px 0px 0px 0px #ff6b08',
+          ],
+        }}
+        transition={{
+          duration: 2,
+          times: [0, 0.5, 1],
+          loop: Infinity,
+        }}
         className={s.photo}
         src={myPhoto}
         width="250"
         alt="Anastasiia Yermakova"
       />
+
       <h1 className={s.name}>Anastasiia Yermakova</h1>
       <p className={s.info}>
-        Hey 👋. Looking for a job for the position of{' '}
-        <b>Frontend Web Developer</b>. I want to be in a good team, where I
-        could improve my skills and use them for interesting tasks. I am a fast
-        learner, responsible, ready for hard tasks.
+        Hey 👋. Almost a year ago, I decided to move into the IT industry and
+        enrolled in the Fullstack web developer course from GoIT. At the moment,
+        the frontend is fully trained. So, I started looking for a job for the
+        position of <b>Frontend Web Developer</b>. I want to be in a good team,
+        where I could improve my skills and use them for interesting tasks. I am
+        a fast learner, responsible, ready for hard tasks.
       </p>
       <h2 className={s.title}>Tech Skills</h2>
       <ul className={s.list}>
@@ -27,23 +43,12 @@ function HomeView({ techSkills, contacts }) {
         ))}
       </ul>
       <h2 className={s.title}>Contacts</h2>
-      <ul>
-        {contacts.map(({ id, label, link, text, icon }) => (
-          <Contacts
-            key={id}
-            label={label}
-            link={link}
-            text={text}
-            icon={icon}
-          />
-        ))}
-      </ul>
+      <Contacts />
     </main>
   );
 }
 
 HomeView.propTypes = {
-  contacts: PropTypes.arrayOf(PropTypes.object),
   techSkills: PropTypes.arrayOf(PropTypes.object),
 };
 

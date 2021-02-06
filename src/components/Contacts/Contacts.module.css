@@ -1,23 +1,17 @@
-.contact {
+.list {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.contact:not(:last-child) {
-  margin-bottom: 10px;
-}
-
-.icon {
-  margin-right: 10px;
+.item:not(:last-child) {
+  margin-right: 38px;
 }
 
 .link {
-  font-size: 14px;
-  line-height: 22px;
-  letter-spacing: 0.04em;
   color: var(--secondaryTextColor);
   transition: color 250ms var(--timingFn);
+  cursor: pointer;
 }
 
 .link:hover,
