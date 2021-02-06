@@ -1,0 +1,37 @@
+[
+  {
+    "id": "id-1",
+    "label": "HTML5",
+    "icon": "https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_html_icon_130541.png"
+  },
+  {
+    "id": "id-2",
+    "label": "CSS3",
+    "icon": "https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_css_icon_130661.png"
+  },
+  {
+    "id": "id-3",
+    "label": "Sass",
+    "icon": "https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_sass_icon_130182.png"
+  },
+  {
+    "id": "id-4",
+    "label": "GIT",
+    "icon": "https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_git_icon_130581.png"
+  },
+  {
+    "id": "id-5",
+    "label": "JavaScript",
+    "icon": "https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_js_official_icon_130509.png"
+  },
+  {
+    "id": "id-6",
+    "label": "React.js",
+    "icon": "https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_reactjs_icon_130205.png"
+  },
+  {
+    "id": "id-7",
+    "label": "Redux",
+    "icon": "https://cdn.icon-icons.com/icons2/2415/PNG/512/redux_original_logo_icon_146365.png"
+  }
+]

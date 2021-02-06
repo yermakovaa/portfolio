@@ -1,0 +1,25 @@
+.nav {
+  display: flex;
+  align-items: center;
+  min-height: 80px;
+  border-bottom: 1px solid var(--secondaryTextColor);
+}
+
+.link {
+  display: inline-block;
+  margin-right: 30px;
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--primaryTextColor);
+  transition: color 250ms var(--timingFn);
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accentColor);
+}
+
+.activeLink {
+  composes: link;
+  color: var(--accentColor);
+}
