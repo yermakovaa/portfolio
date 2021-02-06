@@ -1,0 +1,27 @@
+.main {
+  padding: 50px 0;
+}
+
+.title {
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-transform: uppercase;
+}
+
+.subTitle {
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.03em;
+}
+
+.typeProject {
+  color: var(--accentColor);
+}
+
+.list {
+  margin-bottom: 50px;
+}

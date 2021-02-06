@@ -1,11 +1,12 @@
 import { motion } from 'framer-motion';
+import { techSkills } from './techSkills';
 import TechSkills from '../../components/TechSkills';
 import Contacts from '../../components/Contacts';
 import myPhoto from '../../img/photo.jpeg';
 import PropTypes from 'prop-types';
 import s from './HomeView.module.css';
 
-function HomeView({ techSkills }) {
+function HomeView() {
   return (
     <main className={s.main}>
       <motion.img
@@ -29,7 +30,7 @@ function HomeView({ techSkills }) {
 
       <h1 className={s.name}>Anastasiia Yermakova</h1>
       <p className={s.info}>
-        Hey 👋. Almost a year ago, I decided to move into the IT industry and
+        Hi 👋. Almost a year ago, I decided to move into the IT industry and
         enrolled in the Fullstack web developer course from GoIT. At the moment,
         the frontend is fully trained. So, I started looking for a job for the
         position of <b>Frontend Web Developer</b>. I want to be in a good team,
