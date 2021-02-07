@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .item:nth-child(even) {
@@ -22,7 +23,7 @@
   background-color: #833ab4;
   border-radius: 4px;
   box-shadow: var(--boxShadow);
-  background-image: url('../../img/bg-container.png');
+  background-image: url('../../img/bg-container.jpg');
 }
 
 .img {
@@ -33,6 +34,7 @@
 
 .wrapper {
   width: 500px;
+  padding: 10px;
 }
 
 .name {

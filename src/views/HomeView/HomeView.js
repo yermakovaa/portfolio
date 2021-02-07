@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { techSkills } from './techSkills';
 import TechSkills from '../../components/TechSkills';
 import Contacts from '../../components/Contacts';
-import myPhoto from '../../img/photo.jpeg';
+import myPhoto from '../../img/photo.jpg';
 import PropTypes from 'prop-types';
 import s from './HomeView.module.css';
 

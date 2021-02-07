@@ -1,13 +1,13 @@
-import barbershopImg from '../../img/myProjects/barbershop.png';
-import filmotekaImg from '../../img/myProjects/filmoteka.png';
-import webStudioImg from '../../img/myProjects/webStudio.png';
-import webDevImg from '../../img/myProjects/webDev.png';
-import snakeImg from '../../img/myProjects/snake.png';
-import clockImg from '../../img/myProjects/clock.png';
-import imageFinder from '../../img/myProjects/imageFinder.png';
-import weatherImg from '../../img/myProjects/weather.png';
-import moviesImg from '../../img/myProjects/movies.png';
-import phonebookImg from '../../img/myProjects/phonebook.png';
+import barbershopImg from '../../img/myProjects/barbershop.jpg';
+import filmotekaImg from '../../img/myProjects/filmoteka.jpg';
+import webStudioImg from '../../img/myProjects/webStudio.jpg';
+import webDevImg from '../../img/myProjects/webDev.jpg';
+import snakeImg from '../../img/myProjects/snake.jpg';
+import clockImg from '../../img/myProjects/clock.jpg';
+import imageFinder from '../../img/myProjects/imageFinder.jpg';
+import weatherImg from '../../img/myProjects/weather.jpg';
+import moviesImg from '../../img/myProjects/movies.jpg';
+import phonebookImg from '../../img/myProjects/phonebook.jpg';
 
 export const ownProjects = [
   {

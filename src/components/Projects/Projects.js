@@ -7,7 +7,7 @@ function Projects({ label, link, preview, info, tech, repo }) {
   return (
     <li className={s.item}>
       <div className={s.imgContainer}>
-        <img className={s.img} src={preview} alt={label} />
+        <img className={s.img} src={preview} alt={label} loading="lazy" />
       </div>
       <div className={s.wrapper}>
         <h3 className={s.name}>{label}</h3>
