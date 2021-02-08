@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 import { techSkills } from './techSkills';
 import TechSkills from '../../components/TechSkills';
 import Contacts from '../../components/Contacts';
@@ -9,25 +8,12 @@ import s from './HomeView.module.css';
 function HomeView() {
   return (
     <main className={s.main}>
-      <motion.img
-        animate={{
-          boxShadow: [
-            '0px 0px 0px 0px #ff6b08',
-            '0px 0px 30px 0px #ff6b08',
-            '0px 0px 0px 0px #ff6b08',
-          ],
-        }}
-        transition={{
-          duration: 2,
-          times: [0, 0.5, 1],
-          loop: Infinity,
-        }}
-        className={s.photo}
+      <img
         src={myPhoto}
         width="250"
         alt="Anastasiia Yermakova"
+        className={s.photo}
       />
-
       <h1 className={s.name}>Anastasiia Yermakova</h1>
       <p className={s.info}>
         Hi 👋. Almost a year ago, I decided to move into the IT industry and

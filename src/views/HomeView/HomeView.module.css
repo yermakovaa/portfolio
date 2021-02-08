@@ -5,6 +5,16 @@
 .photo {
   border-radius: 50%;
   background-color: blueviolet;
+
+  animation-name: fire;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fire {
+  50% {
+    box-shadow: 0px 0px 30px 0px var(--accentColor);
+  }
 }
 
 .name {
