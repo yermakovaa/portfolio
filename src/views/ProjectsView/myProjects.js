@@ -77,6 +77,7 @@ export const ownProjects = [
       { id: 'id-3', name: 'React.js' },
       { id: 'id-4', name: 'AJAX' },
       { id: 'id-5', name: 'REST API' },
+      { id: 'id-6', name: 'Axios' },
     ],
   },
   {
@@ -109,6 +110,8 @@ export const ownProjects = [
       { id: 'id-3', name: 'React.js' },
       { id: 'id-4', name: 'AJAX' },
       { id: 'id-5', name: 'REST API' },
+      { id: 'id-6', name: 'Material-UI' },
+      { id: 'id-7', name: 'Slugify' },
     ],
   },
   {

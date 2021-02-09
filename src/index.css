@@ -25,12 +25,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--primaryTextColor);
-  background-image: linear-gradient(
-      rgba(255, 249, 231, 0.7),
-      rgba(255, 249, 231, 0.7)
-    ),
-    url('./img/bg.jpg');
-  background-size: cover;
+  background: rgba(255, 244, 210, 0.6);
 }
 
 img {
