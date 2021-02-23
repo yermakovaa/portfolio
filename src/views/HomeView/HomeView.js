@@ -8,7 +8,7 @@ import s from './HomeView.module.css';
 
 function HomeView() {
   return (
-    <main className={s.main}>
+    <>
       <motion.img
         animate={{
           boxShadow: [
@@ -44,7 +44,7 @@ function HomeView() {
       </ul>
       <h2 className={s.title}>Contacts</h2>
       <Contacts />
-    </main>
+    </>
   );
 }
 

@@ -4,7 +4,7 @@ import s from './ProjectsView.module.css';
 
 function ProjectsView() {
   return (
-    <main className={s.main}>
+    <>
       <h1 className={s.title}>Pet projects</h1>
       <h2 className={s.subTitle}>
         <span className={s.typeProject}>Command</span> projects
@@ -40,7 +40,7 @@ function ProjectsView() {
           />
         ))}
       </ul>
-    </main>
+    </>
   );
 }
 

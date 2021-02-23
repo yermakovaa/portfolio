@@ -4,6 +4,7 @@ import { addBackToTop } from 'vanilla-back-to-top';
 
 import Container from './components/Container';
 import AppBar from './components/AppBar';
+import MainWrapper from './components/MainWrapper';
 import Footer from './components/Footer';
 import LoaderComponent from './components/LoaderComponent';
 
@@ -29,22 +30,23 @@ function App() {
   return (
     <Container>
       <AppBar />
+      <MainWrapper>
+        <Suspense fallback={<LoaderComponent />}>
+          <Switch>
+            <Route path="/" exact>
+              <HomeView />
+            </Route>
 
-      <Suspense fallback={<LoaderComponent />}>
-        <Switch>
-          <Route path="/" exact>
-            <HomeView />
-          </Route>
+            <Route path="/projects" exact>
+              <ProjectsView />
+            </Route>
 
-          <Route path="/projects" exact>
-            <ProjectsView />
-          </Route>
-
-          <Route>
-            <NotFoundView />
-          </Route>
-        </Switch>
-      </Suspense>
+            <Route>
+              <NotFoundView />
+            </Route>
+          </Switch>
+        </Suspense>
+      </MainWrapper>
 
       <Footer />
     </Container>
