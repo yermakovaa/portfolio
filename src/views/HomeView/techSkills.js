@@ -5,6 +5,8 @@ import git from '../../img/techIcons/git.png';
 import javascript from '../../img/techIcons/javascript.png';
 import react from '../../img/techIcons/react.png';
 import redux from '../../img/techIcons/redux.png';
+import node from '../../img/techIcons/node.png';
+import mongo from '../../img/techIcons/mongo.png';
 
 export const techSkills = [
   {
@@ -41,5 +43,15 @@ export const techSkills = [
     id: 'id-7',
     label: 'Redux',
     icon: redux,
+  },
+  {
+    id: 'id-8',
+    label: 'Node.js',
+    icon: node,
+  },
+  {
+    id: 'id-9',
+    label: 'MongoDB',
+    icon: mongo,
   },
 ];

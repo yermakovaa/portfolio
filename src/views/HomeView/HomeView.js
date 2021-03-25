@@ -10,17 +10,10 @@ function HomeView() {
   return (
     <>
       <motion.img
-        animate={{
-          boxShadow: [
-            '0px 0px 0px 0px #ff6b08',
-            '0px 0px 30px 0px #ff6b08',
-            '0px 0px 0px 0px #ff6b08',
-          ],
-        }}
+        initial={{ scale: 0 }}
+        animate={{ scale: 1 }}
         transition={{
-          duration: 2,
-          times: [0, 0.5, 1],
-          loop: Infinity,
+          duration: 1.5,
         }}
         className={s.photo}
         src={myPhoto}
