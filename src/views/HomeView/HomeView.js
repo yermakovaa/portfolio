@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 import { techSkills } from './techSkills';
 import TechSkills from '../../components/TechSkills';
 import Contacts from '../../components/Contacts';
