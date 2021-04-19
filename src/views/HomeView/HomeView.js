@@ -9,12 +9,7 @@ import s from './HomeView.module.css';
 function HomeView() {
   return (
     <>
-      <motion.img
-        initial={{ scale: 0 }}
-        animate={{ scale: 1 }}
-        transition={{
-          duration: 1.5,
-        }}
+      <img
         className={s.photo}
         src={myPhoto}
         width="250"
@@ -22,12 +17,10 @@ function HomeView() {
       />
       <h1 className={s.name}>Anastasiia Yermakova</h1>
       <p className={s.info}>
-        Hi 👋. Almost a year ago, I decided to move into the IT industry and
-        enrolled in the Fullstack web developer course from GoIT. At the moment,
-        the frontend is fully trained. So, I started looking for a job for the
-        position of <b>Frontend Web Developer</b>. I want to be in a good team,
-        where I could improve my skills and use them for interesting tasks. I am
-        a fast learner, responsible, ready for hard tasks.
+        Hi 👋. I'm a Front-end (React) developer and looking for an interesting
+        job with a good team, where I could improve my skills and use them for
+        interesting tasks. I'm a fast learner, responsible, ready for hard
+        tasks.
       </p>
       <h2 className={s.title}>Tech Skills</h2>
       <ul className={s.list}>
