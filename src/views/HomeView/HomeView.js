@@ -16,7 +16,7 @@ function HomeView() {
       />
       <h1 className={s.name}>Anastasiia Yermakova</h1>
       <p className={s.info}>
-        Hi 👋. I'm a Front-end (React) developer and looking for an interesting
+        Hi 👋. I'm a Frontend (React) Developer and looking for an interesting
         job with a good team, where I could improve my skills and use them for
         interesting tasks. I'm a fast learner, responsible, ready for hard
         tasks.
