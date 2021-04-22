@@ -5,6 +5,12 @@
   flex-wrap: wrap;
 }
 
+@media (max-width: 1032px) {
+  .item {
+    justify-content: center;
+  }
+}
+
 .item:nth-child(even) {
   flex-direction: row-reverse;
 }
@@ -20,10 +26,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #833ab4;
   border-radius: 4px;
   box-shadow: var(--boxShadow);
-  background-image: url('../../img/bg-container.jpg');
+  background: url('../../img/bg-container.jpg') no-repeat;
 }
 
 .img {
