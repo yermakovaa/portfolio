@@ -1,11 +1,11 @@
-import s from './TechSkills.module.css';
+import { Item, Text } from './TechSkills.style';
 
 function TechSkills({ label, icon }) {
   return (
-    <li className={s.item}>
-      <img src={icon} alt={label} width="40" />
-      <span className={s.text}>{label}</span>
-    </li>
+    <Item>
+      <img src={icon} alt={label} width="40" height="40" />
+      <Text>{label}</Text>
+    </Item>
   );
 }
 

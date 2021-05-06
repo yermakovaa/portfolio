@@ -1,13 +1,13 @@
 import { BsHeartFill } from 'react-icons/bs';
-import { motion } from 'framer-motion';
-import s from './Footer.module.css';
+import { accentColor } from '../../assets/stylesVariables';
+import { Wrapper, Copy, Heart } from './Footer.style';
 
 function Footer() {
   return (
-    <footer className={s.footer}>
-      <div className={s.wrapper}>
+    <Wrapper>
+      <Copy>
         © 2021 | Developed with
-        <motion.div
+        <Heart
           animate={{
             scale: [1, 1.5, 1],
           }}
@@ -16,13 +16,12 @@ function Footer() {
             times: [0, 0.5, 1],
             loop: Infinity,
           }}
-          className={s.heart}
         >
-          <BsHeartFill color="#ff6b08" />
-        </motion.div>
-        by GoIT Student - Yermakova A.
-      </div>
-    </footer>
+          <BsHeartFill color={accentColor} />
+        </Heart>
+        by Yermakova A.
+      </Copy>
+    </Wrapper>
   );
 }
 

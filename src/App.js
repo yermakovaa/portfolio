@@ -4,9 +4,10 @@ import { addBackToTop } from 'vanilla-back-to-top';
 
 import Container from './components/Container';
 import AppBar from './components/AppBar';
-import MainWrapper from './components/MainWrapper';
 import Footer from './components/Footer';
 import LoaderComponent from './components/LoaderComponent';
+
+import { accentColor } from './assets/stylesVariables';
 
 const HomeView = lazy(() =>
   import('./views/HomeView' /* webpackChunkName: "home-view" */),
@@ -23,21 +24,21 @@ const NotFoundView = lazy(() =>
 function App() {
   useEffect(() => {
     addBackToTop({
-      backgroundColor: '#ff6b08',
+      backgroundColor: accentColor,
     });
   }, []);
 
   return (
-    <Container>
+    <>
       <AppBar />
-      <MainWrapper>
+      <Container>
         <Suspense fallback={<LoaderComponent />}>
           <Switch>
             <Route path="/" exact>
               <HomeView />
             </Route>
 
-            <Route path="/projects" exact>
+            <Route path="/projects">
               <ProjectsView />
             </Route>
 
@@ -46,10 +47,9 @@ function App() {
             </Route>
           </Switch>
         </Suspense>
-      </MainWrapper>
-
+      </Container>
       <Footer />
-    </Container>
+    </>
   );
 }
 

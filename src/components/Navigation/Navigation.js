@@ -1,25 +1,43 @@
-import { NavLink } from 'react-router-dom';
-import s from './Navigation.module.css';
+import { useState } from 'react';
+import { MdMenu, MdClose } from 'react-icons/md';
+import { Nav, Link, LinkResume, MenuBtn } from './Navigation.style';
 
-const Navigation = () => (
-  <nav className={s.nav}>
-    <NavLink exact to="/" className={s.link} activeClassName={s.activeLink}>
-      Home
-    </NavLink>
+function Navigation() {
+  const [isOpenMenu, setIsOpenMenu] = useState(false);
 
-    <NavLink to="/projects" className={s.link} activeClassName={s.activeLink}>
-      Projects
-    </NavLink>
+  const menuToggle = () => {
+    setIsOpenMenu(prev => !prev);
+  };
 
-    <a
-      href="https://yer-resume.netlify.app/"
-      className={s.link}
-      target="_blank"
-      rel="noreferrer"
-    >
-      Resume
-    </a>
-  </nav>
-);
+  return (
+    <>
+      <MenuBtn>
+        {isOpenMenu ? (
+          <MdClose size="40" onClick={menuToggle} />
+        ) : (
+          <MdMenu size="40" onClick={menuToggle} />
+        )}
+      </MenuBtn>
+      <Nav menuToggle={isOpenMenu}>
+        <Link exact to="/" onClick={menuToggle}>
+          Home
+        </Link>
+
+        <Link to="/projects" onClick={menuToggle}>
+          Projects
+        </Link>
+
+        <LinkResume
+          href="https://yer-resume.netlify.app/"
+          target="_blank"
+          rel="noreferrer"
+          onClick={menuToggle}
+        >
+          Resume
+        </LinkResume>
+      </Nav>
+    </>
+  );
+}
 
 export default Navigation;

@@ -1,12 +1,12 @@
-import html from '../../img/techIcons/html.png';
-import css from '../../img/techIcons/css.png';
-import sass from '../../img/techIcons/sass.png';
-import git from '../../img/techIcons/git.png';
-import javascript from '../../img/techIcons/javascript.png';
-import react from '../../img/techIcons/react.png';
-import redux from '../../img/techIcons/redux.png';
-import node from '../../img/techIcons/node.png';
-import mongo from '../../img/techIcons/mongo.png';
+import html from '../../assets/images/techIcons/html.png';
+import css from '../../assets/images/techIcons/css.png';
+import sass from '../../assets/images/techIcons/sass.png';
+import git from '../../assets/images/techIcons/git.png';
+import javascript from '../../assets/images/techIcons/javascript.png';
+import react from '../../assets/images/techIcons/react.png';
+import redux from '../../assets/images/techIcons/redux.png';
+import node from '../../assets/images/techIcons/node.png';
+import mongo from '../../assets/images/techIcons/mongo.png';
 
 export const techSkills = [
   {

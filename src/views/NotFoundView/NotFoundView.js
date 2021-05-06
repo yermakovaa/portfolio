@@ -1,11 +1,11 @@
-import errorImage from '../../img/error.jpg';
-import s from './NotFoundView.module.css';
+import errorImage from '../../assets/images/error.jpg';
+import { Img, Title } from './NotFoundView.style';
 
 export default function NotFoundView() {
   return (
-    <main role="alert" className={s.main}>
-      <img src={errorImage} width="650" alt="Error" className={s.img} />
-      <h1 className={s.title}>Page not found 😨</h1>
-    </main>
+    <div role="alert">
+      <Img src={errorImage} width="650" alt="Error" />
+      <Title>Page not found 😨</Title>
+    </div>
   );
 }

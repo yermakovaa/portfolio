@@ -1,15 +1,14 @@
 import Projects from '../../components/Projects';
 import { ownProjects, commandProjects } from './myProjects';
-import s from './ProjectsView.module.css';
+import { Title, TypeProject, List } from './ProjectsView.style';
 
 function ProjectsView() {
   return (
     <>
-      <h1 className={s.title}>Pet projects</h1>
-      <h2 className={s.subTitle}>
-        <span className={s.typeProject}>Command</span> projects
-      </h2>
-      <ul className={s.list}>
+      <Title>
+        [<TypeProject> TEAMWORK</TypeProject> _PROJECTS ]
+      </Title>
+      <List>
         {commandProjects.map(
           ({ id, label, link, preview, info, tech, repo }) => (
             <Projects
@@ -23,11 +22,11 @@ function ProjectsView() {
             />
           ),
         )}
-      </ul>
-      <h2 className={s.subTitle}>
-        <span className={s.typeProject}>Own</span> projects
-      </h2>
-      <ul className={s.list}>
+      </List>
+      <Title>
+        [<TypeProject> MY PERSONAL</TypeProject> _PROJECTS ]
+      </Title>
+      <List>
         {ownProjects.map(({ id, label, link, preview, info, tech, repo }) => (
           <Projects
             key={id}
@@ -39,7 +38,7 @@ function ProjectsView() {
             repo={repo}
           />
         ))}
-      </ul>
+      </List>
     </>
   );
 }

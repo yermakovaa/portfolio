@@ -1,33 +1,34 @@
 import { techSkills } from './techSkills';
 import TechSkills from '../../components/TechSkills';
 import Contacts from '../../components/Contacts';
-import myPhoto from '../../img/photo.jpg';
+import woman from '../../assets/images/woman.png';
 import PropTypes from 'prop-types';
-import s from './HomeView.module.css';
+import { Wrapper, Flex, Title, Info, SubTitle, List } from './HomeView.style';
 
 function HomeView() {
   return (
     <>
-      <img
-        className={s.photo}
-        src={myPhoto}
-        width="250"
-        alt="Anastasiia Yermakova"
-      />
-      <h1 className={s.name}>Anastasiia Yermakova</h1>
-      <p className={s.info}>
-        Hi 👋. I'm a Frontend (React) Developer and looking for an interesting
-        job with a good team, where I could improve my skills and use them for
-        interesting tasks. I'm a fast learner, responsible, ready for hard
-        tasks.
-      </p>
-      <h2 className={s.title}>Tech Skills</h2>
-      <ul className={s.list}>
+      <Wrapper>
+        <Flex>
+          <Title>Hi there!</Title>
+          <Info>/ My name's Anastasiia and I’m a Front-end developer!</Info>
+        </Flex>
+        <Flex>
+          <img
+            src={woman}
+            alt="Anastasiia Yermakova"
+            width="560"
+            height="465"
+          />
+        </Flex>
+      </Wrapper>
+      <SubTitle>[ Tech Skills_ ]</SubTitle>
+      <List>
         {techSkills.map(({ id, label, icon }) => (
           <TechSkills key={id} label={label} icon={icon} />
         ))}
-      </ul>
-      <h2 className={s.title}>Contacts</h2>
+      </List>
+      <SubTitle>[ Contacts_ ]</SubTitle>
       <Contacts />
     </>
   );

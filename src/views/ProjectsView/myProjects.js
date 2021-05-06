@@ -1,12 +1,12 @@
-import barbershopImg from '../../img/myProjects/barbershop.jpg';
-import filmotekaImg from '../../img/myProjects/filmoteka.jpg';
-import webStudioImg from '../../img/myProjects/webStudio.jpg';
-import webDevImg from '../../img/myProjects/webDev.jpg';
-import imageFinder from '../../img/myProjects/imageFinder.jpg';
-import weatherImg from '../../img/myProjects/weather.jpg';
-import moviesImg from '../../img/myProjects/movies.jpg';
-import phonebookImg from '../../img/myProjects/phonebook.jpg';
-import proTestImg from '../../img/myProjects/proTest.jpg';
+import barbershopImg from '../../assets/images/previewProjects/barbershop.png';
+import filmotekaImg from '../../assets/images/previewProjects/filmoteka.png';
+import webStudioImg from '../../assets/images/previewProjects/webStudio.png';
+import webDevImg from '../../assets/images/previewProjects/webDev.png';
+import imageFinder from '../../assets/images/previewProjects/imageFinder.png';
+import weatherImg from '../../assets/images/previewProjects/weather.png';
+import moviesImg from '../../assets/images/previewProjects/movies.png';
+import phonebookImg from '../../assets/images/previewProjects/phonebook.png';
+import proTestImg from '../../assets/images/previewProjects/proTest.png';
 
 export const ownProjects = [
   {
@@ -120,15 +120,13 @@ export const commandProjects = [
     tech: [
       { id: 'id-1', name: 'React.js' },
       { id: 'id-2', name: 'Redux' },
-      { id: 'id-3', name: 'AJAX' },
-      { id: 'id-4', name: 'REST API' },
-      { id: 'id-5', name: 'Axios' },
-      { id: 'id-6', name: 'Material-UI' },
-      { id: 'id-7', name: 'Styled components' },
-      { id: 'id-8', name: 'Node.js' },
-      { id: 'id-9', name: 'Mongoose' },
-      { id: 'id-10', name: 'Express' },
-      { id: 'id-11', name: 'Swagger' },
+      { id: 'id-3', name: 'Axios' },
+      { id: 'id-4', name: 'Material-UI' },
+      { id: 'id-5', name: 'Styled components' },
+      { id: 'id-6', name: 'Node.js' },
+      { id: 'id-7', name: 'Mongoose' },
+      { id: 'id-8', name: 'Express' },
+      { id: 'id-9', name: 'Swagger' },
     ],
   },
   {
