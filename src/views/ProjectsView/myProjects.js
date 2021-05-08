@@ -115,7 +115,7 @@ export const commandProjects = [
     repo: 'https://github.com/IvanFesenko/ProTestFront',
     preview: proTestImg,
     info:
-      'We will help you find weak points in knowledge for a QA Engineer so that you can strengthen it.',
+      'This app will help you find weak points in knowledge for a QA Engineer so that you can strengthen it.',
     link: 'https://protest-fsdev.netlify.app/',
     tech: [
       { id: 'id-1', name: 'React.js' },

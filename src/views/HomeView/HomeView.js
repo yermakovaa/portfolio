@@ -11,7 +11,7 @@ function HomeView() {
       <Wrapper>
         <Flex>
           <Title>Hi there!</Title>
-          <Info>/ My name's Anastasiia and I’m a Front-end developer!</Info>
+          <Info>/ My name's Anastasiia and I’m a Front-end Developer!</Info>
         </Flex>
         <Flex>
           <img
