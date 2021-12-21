@@ -7,6 +7,13 @@ export const Item = styled.li`
   line-height: 1.71;
 `;
 
+export const Image = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+`;
+
 export const Text = styled.span`
   display: block;
   color: ${secondaryColor};
