@@ -6,7 +6,7 @@ function Footer() {
   return (
     <Wrapper>
       <Copy>
-        © 2021 | Developed with
+        © 2021 | Developed
         <Heart
           animate={{
             scale: [1, 1.5, 1],
